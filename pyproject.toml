@@ -1,0 +1,28 @@
+[project]
+name = "self-rewarding-language-models"
+version = "0.1.0"
+requires-python = "==3.11.*"
+dependencies = [
+  "accelerate==0.29.2",
+  "auto_mix_prep==0.2.0",
+  "colorama==0.4.6",
+  "datasets==2.18.0",
+  "pandas==2.2.2",
+  "peft==0.10.0",
+  "PyYAML==6.0.1",
+  "torch==2.4.0",
+  "transformers==4.39.3",
+  "trl==0.8.3",
+  "wandb==0.16.6",
+]
+
+[dependency-groups]
+dev = [
+  "ruff",
+]
+
+[tool.ruff]
+indent-width = 2
+
+[tool.ruff.format]
+indent-style = "space"
